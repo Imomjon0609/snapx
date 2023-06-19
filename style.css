@@ -1,0 +1,523 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --total-color:#00bdfe;
+    --text-color:#212741;
+    --p-color:#afafaf;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+nav > ul {
+    display: flex;
+    list-style: none;
+}
+nav > ul > li{
+    border: 1px solid var(--total-color);
+    padding: 1.8rem 2.5rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: white;
+    background-color: var(--total-color);
+    cursor: pointer;
+}
+.button_icon > button{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+    color: var(--total-color);
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid var(--total-color);
+    border-radius: 10px;
+    transition: 0.3s all;
+}
+.button_icon > button:hover{
+    background-color: var(--total-color);
+    color: white;
+}
+.BarsContainer{
+    display: none;
+}
+
+header{
+    background-image: url(https://templatemo.com/templates/templatemo_576_snapx_photography/assets/images/banner-bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    height: 100vh;
+}
+
+header > h1{
+    font-size: 3.5rem;
+    color: white;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+header > p{
+    color: white;
+    width: 68%;
+    text-align: center;
+    line-height: 2rem;
+    padding: 1.5rem;
+    border-top: 1px solid var(--p-color);
+}
+.button_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_content > button{
+    padding: 1.3rem 2rem;
+    font-size: 1.3rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.button_content > button:hover{
+    background-color: white;
+    color: var(--total-color);
+}
+.button_content > i{
+    display: flex;
+    color: white;
+    cursor: pointer;
+    margin-left: 2rem;
+    transition: 0.3s all
+}
+.button_content > i:hover{
+    color: var(--total-color);
+}
+
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 2rem auto;
+}
+.text_container {
+    line-height: 2rem;
+}
+.text_container > h4{
+    font-weight: lighter;
+    color: var(--total-color);
+}
+.text_container > h1{
+    color: var(--text-color);
+    font-size: 1.8rem;
+}
+.text > button{
+    padding: 0.8rem 2rem;
+    color: white;
+    font-size: 1.1rem;
+    background-color: var(--total-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.text > button:hover{
+    background-color: white;
+    border: 1px solid var(--total-color);
+    color: var(--total-color);
+}
+.article_container{
+    display: flex;
+    width: 90%;
+    margin: 2rem auto;
+    align-items: center;
+    gap: 1rem;
+
+}
+.first_article,
+.second_article{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.one,
+.two{
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.img_content{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.img_content > img{
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+.text_content{
+    line-height: 2rem;
+}
+.text_content > h3{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+.text_content > p{
+    width: 80%;
+    color: var(--p-color);
+}
+.text_content > p > span{
+    padding: 0.3rem;
+    margin: 0.3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    color: var(--total-color);
+    border-radius: 5px;  
+}
+.one > button,
+.two > button{
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 98%;
+    border-radius: 10px;
+    border: 1px solid var(--total-color);
+    font-size: 1.1rem;
+    color: var(--total-color);
+    cursor: pointer;
+    transition: 0.3s all;
+    background-color: white;
+}
+.one > button:hover,
+.two > button:hover{
+    background-color: var(--total-color);
+    color: white;
+    
+}
+
+
+.logo_img{
+    position: relative;
+    overflow: hidden;
+}
+
+.logo{
+    
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    transition: 0.2s ease;
+    visibility: hidden;
+    color: var(--total-color);
+   
+}
+.logo > span{
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.logo_img:hover .logo{
+    visibility: visible;
+    transform: translateY(2rem);
+}
+
+
+.logo_img > img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+
+.section_two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://templatemo.com/templates/templatemo_576_snapx_photography/assets/images/closed-bg.jpg);
+}
+.section_two > h4{
+    color: var(--total-color);
+    font-weight: lighter;
+    margin: 3rem 0 1rem 0 ;
+}
+.section_two > h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.articles{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    
+}
+.articles > article{
+    background-color: white;
+    border-radius: 10px;
+}
+.articles > article > img{
+    border-top-right-radius: 10px ;
+    border-top-left-radius: 10px ;
+}
+.texts{
+    margin-top: 2rem;
+}
+.p_content{
+    margin-bottom: 2rem;
+    color: var(--p-color);
+}
+.texts,
+.p_content{
+    
+    display: flex;
+    justify-content: space-around;
+    line-height: 2rem;
+}
+.section_two > button{
+    padding: 1rem 3rem;
+    color: var(--total-color);
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 2rem 0;
+    background-color: transparent;
+    border: 1px solid var(--total-color);
+    border-radius: 10px;
+    transition: 0.3s all;
+}
+.section_two > button:hover{
+    background-color: var(--total-color);
+    color: white;
+}
+
+.section_three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section_three > h4{
+    color: var(--total-color);
+    margin: 4rem 0 1rem 0;
+    font-weight: lighter;
+}
+.section_three > h1{
+    font-size: 2rem;
+}
+.three_article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+  
+}
+.three_article > article{
+   border: 1px solid #e0e0e0;
+   padding: 2rem;
+   border-radius: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   transition: 0.3s all;
+}
+.three_article > article:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.img_text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 3rem;
+    padding: 1rem 2rem;
+}
+.three_article > article > ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2rem;
+    margin: 1rem 0;
+    color: var(--total-color);
+}
+.three_article > article > h1{
+       color: var(--total-color);
+       text-align: center;
+       font-size: 2rem;
+       margin: 2rem;
+}
+.three_article > article > button{
+    padding: 1rem 2rem;
+    border: 1px solid var(--total-color);
+    color: var(--total-color);
+    background-color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.three_article > article > button:hover{
+    background-color: var(--total-color);
+    color: white;
+}
+
+footer{
+    background-color: var(--total-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: white;
+   
+}
+footer > p{
+    font-weight: lighter;
+    
+}
+footer > p > span{
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+footer > p > span:hover{
+    color: var(--text-color);
+}
+
+
+
+@media only screen and (max-width:1200px) {
+       .article_container{
+        flex-direction: column;
+        margin-bottom: 2rem;
+       }
+       .articles{
+        flex-direction: column;
+        width: 100%;
+       }
+       .section_two > h4{
+        font-size: 0.8rem;
+       }
+       .section_two > h1{
+        text-align: center;
+        font-size: 1.8rem;
+       }
+       .articles > article{
+        width: 60%;
+       }
+       .articles > article > img{
+        width: 100%;
+       }
+       
+}
+
+@media only screen and (max-width:1000px) {
+    nav > ul > li{
+        padding: 2rem 1rem;
+    }
+}
+@media only screen and (max-width:845px) {
+    .BarsContainer{
+        display: block;
+    }
+    .BarsContainer >i{
+        font-size: 1.5rem;
+    }
+    nav > ul{
+        display: none;
+    }
+    .button_icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    header > h1{
+       font-size: 2.5rem;
+       width: 100%;      
+    }
+    header > p{
+        width: 90%;
+    }
+    .button_content > button {
+        padding: 1rem;
+        margin-left: 1rem;
+      
+    }
+    .button_content > i{
+        gap: 0.7rem;
+
+    }
+    .text_container > h1 {
+        font-size: 1.5rem;
+    }
+    .text{
+        flex-direction: column;
+        margin: 2rem auto;
+        text-align: center;
+        line-height: 3rem;
+    }
+    .text > button{
+        padding: 1rem;
+       
+    }
+    .first_article,
+    .second_article{
+     flex-direction: column;
+    }
+    .img_content{
+        margin: 1rem 0;
+    }
+    .text_content{
+        width: 100%;
+    }
+    .text_content > p{
+        width: 100%;
+    }
+    .articles > article{
+        width: 80%;
+    }
+
+    .three_article{
+        flex-direction: column;
+    }
+    .section_three > h1{
+        text-align: center;
+    }
+    .img_text {
+        width: 100%;
+    }
+    .three_article > article {
+        width: 80%;
+    }
+    footer > p{
+        text-align: center;
+        line-height: 2rem;
+    }
+}
